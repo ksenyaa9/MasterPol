@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b88cc8cacc524dfd95632c4a2322644d" Name="Diagram1">
+        <EntityTypeShape EntityType="MasterPol_CorrectedModel.Materials" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPol_CorrectedModel.materialType" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPol_CorrectedModel.Partner_Products" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPol_CorrectedModel.Partners" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPol_CorrectedModel.Pertner_type" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPol_CorrectedModel.ProductMaterials" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPol_CorrectedModel.Products" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPol_CorrectedModel.ProductType" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="MasterPol_CorrectedModel.FK_Materials_materialType" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPol_CorrectedModel.FK_ProductMaterials_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPol_CorrectedModel.FK_Partner_Products_Partners" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPol_CorrectedModel.FK_Partner_Products_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPol_CorrectedModel.FK_Partners_Pertner_type" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPol_CorrectedModel.FK_ProductMaterials_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPol_CorrectedModel.FK_Products_ProductType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

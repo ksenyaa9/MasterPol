@@ -1,0 +1,61 @@
+﻿<Page x:Class="MasterPolGerasimova.AddEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MasterPolGerasimova"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditPage" FontFamily="Segoe UI" >
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Наименование" FontSize="15" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="0" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding company_name}"></TextBox>
+        
+        <TextBlock Text="Тип партенра" FontSize="15" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <ComboBox Grid.Column="1" Grid.Row="1" Height="30" Width="250" HorizontalAlignment="Left" Name="PartnerTypeComboBox"  DisplayMemberPath="pertner_type1" SelectedValuePath="id_partnerType" SelectedValue="{Binding partner_type_id}"/>
+        <TextBlock Text="Рейтинг" FontSize="15" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="2" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding rating, ValidatesOnExceptions=True, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"
+                 PreviewTextInput="TextBox_PreviewTextInput"></TextBox>
+
+        <TextBlock Text="Адрес" FontSize="15" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="3" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding address}"></TextBox>
+
+        <TextBlock Text="ИНН" FontSize="15" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="4" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding inn}"></TextBox>
+
+        <TextBlock Text="Имя директора" FontSize="15" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="0" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding director_firstName}"></TextBox>
+        
+        <TextBlock Text="Фамилия директора" FontSize="15" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="1" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding director_lastName}"></TextBox>
+        
+        <TextBlock Text="Отчество директора" FontSize="15" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="2" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding director_patronymic}"></TextBox>
+
+        <TextBlock Text="Телефон" FontSize="15" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="3" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding phone}"></TextBox>
+        
+        <TextBlock Text="Email" FontSize="15" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="4" Height="30" Width="250" HorizontalAlignment="Left" Text="{Binding email}"></TextBox>
+
+        <Button Name="SaveButton" Content="Сохранить" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Click="SaveButton_Click"></Button>
+
+
+    </Grid>
+</Page>
