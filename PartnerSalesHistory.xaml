@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MasterPolGerasimova"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PartnerSalesHistory">
+      Title="PartnerSalesHistory" FontFamily="Segoe UI" >
 
     <Grid>
         <Grid.RowDefinitions>

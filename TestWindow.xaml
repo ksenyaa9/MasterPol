@@ -29,22 +29,23 @@
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Тип материала:" Margin="5" FontSize="18"/>
         <TextBox Grid.Row="1" Grid.Column="1" Name="MaterialTypeTextBox"  FontSize="15" Text="1" Margin="5"/>
 
-        <TextBlock Grid.Row="2" Grid.Column="0" Text="Количество продукции:" Margin="5" FontSize="18"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Name="ProductCountTextBox" Text="100" Margin="5"  FontSize="15"/>
 
-        <TextBlock Grid.Row="3" Grid.Column="0" Text="Параметр 1:" Margin="5" FontSize="18"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Name="Param1TextBox" Text="2.5" Margin="5"  FontSize="15"/>
 
-        <TextBlock Grid.Row="4" Grid.Column="0" Text="Параметр 2:" Margin="5" FontSize="18"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Name="Param2TextBox" Text="1.8" Margin="5" FontSize="15"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Параметр 1:" Margin="5" FontSize="18"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="Param1TextBox" Text="2.5" Margin="5"  FontSize="15"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Параметр 2:" Margin="5" FontSize="18"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="Param2TextBox" Text="1.8" Margin="5" FontSize="15"/>
 
         <TextBlock Grid.Row="5" Grid.Column="0" Text="Результат:" Margin="5" FontSize="18"/>
         <TextBlock Grid.Row="5" Grid.Column="1" Name="ResultTextBlock" Margin="5"  FontSize="15"/>
 
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Количество продукции:" Margin="5" FontSize="18"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="ProductCountTextBox" Text="100" Margin="5"  FontSize="15"/>
+
         <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Content="Рассчитать" Click="CalculateButton_Click" Margin="5" Width="150"/>
-            <Button  Content="Закрыть" Click="CloseButton_Click" 
-        HorizontalAlignment="Center" Margin="5" Width="150"/>
+
            
         </StackPanel>
 

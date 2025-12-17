@@ -61,7 +61,7 @@
         </ListView>
 
         <Button Content="Добавить" Name="AddButton" Click="AddButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top"></Button>
-        <Button Content="Тест расчета материалов" Name="TestCalculation" Click="TestCalculation_Click" Width="250" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="10"/>
+        <Button Content="Расчета материалов" Name="TestCalculation" Click="TestCalculation_Click" Width="230" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="10"/>
 
     </Grid>
 </Page>
